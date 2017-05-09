@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/results' do
-  @game1 = Quiz.new(params[:q1], params[:q2] params[:q3] params[:q4] params[:q5] params[:q6] params[:q7] params[:q8] params[:q9] params[:q10])
+  @game1 = Quiz.new(params[:q1], params[:q2], params[:q3], params[:q4], params[:q5], params[:q6], params[:q7], params[:q8], params[:q9], params[:q10])
   erb :results
   end
 
